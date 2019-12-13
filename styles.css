@@ -1,0 +1,149 @@
+/* FICHIER DE STYLES POUR LA MISE EN PAGE (L'AFFICHE) DU SITE WEB */
+
+/* Style des Listes */
+ul {
+  list-style-type: none; /* Pas de "tiret" en début de ligne */
+  margin: 0; /* Aucune Marge (particulière) */
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;	/* Couleur Noire */
+  text-align: center;	/* Texte Centré */
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: grey; /* Couleur d'Arrière Plan Gris */
+}
+
+/* Style pour les (sous-)titres */
+h2 {
+	font-weight: normal;
+	font-size: 17px;
+}
+
+/* Style "standard" pour la "section" "menu" */
+.menu {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Styles "specifiques" pour la "section" "menu" */
+.menu input[type=text] {
+  padding: 6px;
+  margin-top: 8px; /* Marge en Haut de 8px */
+  font-size: 17px;
+  border: none; /* Pas de bord */
+}
+
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.menu a.active {
+  background-color: #2196F3;
+  color: white; /* Couleur Blanche */
+}
+
+.menu .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px; /* Marge de Droite de 16px */
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styles pour la partie "<body>" et la partie "<html>" */
+body, html{height:100%;}
+
+#main{
+	max-width:1280px; 
+	min-height:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+/* Style pour la partie "<header>" */
+header {
+  background-color: lightgrey; /* Couleur d'Arrière Plan en Gris-Clair */
+}
+
+/* Styles pour la partie "<footer>" */
+footer{
+	bottom:0;
+	width:100%;
+	padding-top:50px; /* "Espace" entre le haut et la partie "<footer>" de 50px */
+	height:50px;
+}
+
+@media only screen and (min-width: 768px) {
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+	
+	img,
+	table,
+	td,
+	blockquote,
+	code,
+	pre,
+	textarea,
+	input,
+	iframe,
+	object,
+	embed,
+	video {
+		max-width: 100%;
+	}
+		img {
+		height: auto;
+	}
+	textarea,
+	table,
+	td,
+	th,
+	code,
+	pre,
+	samp {
+		-webkit-hyphens: auto; /* césure propre */
+		-moz-hyphens: auto;
+		hyphens: auto;
+		word-wrap: break-word; /* passage à la ligne forcé */
+	}
+	code,
+	pre,
+	samp {
+		white-space: pre-wrap; /* passage à la ligne spécifique pour les éléments à châsse fixe */
+	}
+	body:before {
+		content: "Version navigateur du site";
+		display: block;
+		text-align: center;
+		font-style: italic;
+		color: #777;
+	}
+}
